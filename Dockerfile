@@ -26,7 +26,7 @@ RUN composer install --no-dev --optimize-autoloader
 
 # Install Node.js and npm
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt install npm
+RUN apt-get install -y nodejs npm
 
 # Install project dependencies and build the frontend assets
 RUN npm install
