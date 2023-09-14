@@ -36,4 +36,7 @@ RUN npm run build
 EXPOSE 9000
 
 # Start PHP-FPM (PHP FastCGI Process Manager)
-CMD ["php-fpm"]
+# CMD ["php-fpm"]
+
+# You can also start Laravel's built-in web server like this (for development)
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=9000"]
