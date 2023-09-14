@@ -38,7 +38,5 @@ EXPOSE 9000
 # Start PHP-FPM (PHP FastCGI Process Manager)
 CMD ["php-fpm"]
 
-RUN sed -i 's/127.0.0.1:9000/0.0.0.0:9000/g' /etc/php7/php-fpm.d/www.conf
-
 # You can also start Laravel's built-in web server like this (for development)
 # CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=9000"]
