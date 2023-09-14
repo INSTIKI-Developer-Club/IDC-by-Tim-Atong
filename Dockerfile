@@ -30,7 +30,7 @@ RUN apt-get install -y nodejs npm
 
 # Install project dependencies and build the frontend assets
 RUN npm install
-RUN npm run production
+RUN npm run build
 
 # Expose port 9000 (or any other port you want to use)
 EXPOSE 9000
