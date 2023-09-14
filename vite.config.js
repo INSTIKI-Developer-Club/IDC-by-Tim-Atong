@@ -5,6 +5,9 @@ export default defineConfig({
     server: {
         host: 'localhost',
     },
+    build: {
+        publicDir: 'public',
+    },
     plugins: [
         laravel({
             input: [
