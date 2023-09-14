@@ -33,7 +33,7 @@ RUN npm install
 RUN npm run build
 
 # Expose port 9000 (or any other port you want to use)
-EXPOSE 9000
+# EXPOSE 9000
 
 # Start PHP-FPM (PHP FastCGI Process Manager)
 # CMD ["php-fpm"]
