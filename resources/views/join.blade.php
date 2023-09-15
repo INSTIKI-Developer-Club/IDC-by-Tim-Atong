@@ -5,15 +5,15 @@
 @vite(['resources/js/app.js', 'resources/js/join.js', 'resources/css/join.css'])
 @endsection
 
-@section('title', 'Form Pendaftaran')
+@section('title', 'Lets Join with Us')
 
 @section('content')
 <div class="section-title d-flex justify-content-center align-items-center px-3">
     <div class="container">
         <div class="title-join">
             <div class="row d-flex justify-content-start align-items-center">
-                <div class="col-lg-6 col-md-6 col-sm-12 tulisan d-flex justify-content-start align-items-start" data-aos="fade-right" data-aos-delay="50" data-aos-duration="2000">
-                    <h4>INSTIKI DEVELOPER CLUB</h4>
+                <div class="division-head col-lg-6 col-md-6 col-sm-12 tulisan d-flex justify-content-start align-items-start" data-aos="fade-right" data-aos-delay="50" data-aos-duration="2000">
+                    <h5>INSTIKI DEVELOPER CLUB</h5>
                     <h1>Let's, Join with us!</h1>
                     <p class="title-divisi">Chase your dream of becoming a <span class="auto-type "
                             id="auto-type"></span></p>
@@ -89,8 +89,8 @@
 
         <div class="mb-3" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1100">
             <label for="exampleInputEmail1" class="form-label">The reason you chose IDC</label>
-            <input type="text" class="form-control form-control-lg box-form rounded-0" id="exampleInputEmail1"
-                placeholder="Enter your reason" style="color: white">
+            <textarea style="height: 200px; color:white;" type="text" class="form-control form-control-lg box-form rounded-0" id="exampleInputEmail1"
+                placeholder="Enter your reason" style="color: white"></textarea>
         </div>
 
         <button type="submit" class="btn btn-danger px-5 mt-3" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1100">Submit</button>
